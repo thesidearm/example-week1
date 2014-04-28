@@ -13,7 +13,7 @@ var url = "http://graph.facebook.com/Boo/photos?type=uploaded";
 http.createServer(function (req, res) {
   res.writeHeader(200, {"Content-Type": "text/html"});
   
-  var data = "<html><head></head><body>"
+  var data = "<html><head><title>hello world</title></head><body>"
   request.get(url, function (err, body, response) {
 
     response = JSON.parse(response);
